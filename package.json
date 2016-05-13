@@ -11,5 +11,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shawmut/switch-email-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shawmut/switch-email-generator/issues"
+  },
+  "homepage": "https://github.com/shawmut/switch-email-generator#readme"
 }
