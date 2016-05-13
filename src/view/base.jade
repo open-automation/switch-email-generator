@@ -185,21 +185,16 @@ html(lang="en", xmlns="http://www.w3.org/1999/xhtml")
 
                             if(enable_pre_code_block === true)
                                 tr
-                                    td(style="background-image:url('https://s3.amazonaws.com/static-email-assets/email_graphics/purple.png');padding-top: 8px; padding-bottom: 8px; border-top:1px solid #DDDDDD; color:#EEEEEE;")
+                                    td(
+                                        style="background-image:url('https://s3.amazonaws.com/static-email-assets/email_graphics/purple.png');padding-top: 8px; padding-bottom: 8px; border-top:1px solid #DDDDDD; color:#EEEEEE;",
+                                        colspan=(right_col_size ? 2 : null)
+                                    )
                                         block pre_code
 
-//                            block
-//
-//    <tr>
-//    <td style="background-image:url('{{ dashboard_url }}/img/pattern/purple.png');padding-top: 8px; padding-bottom: 8px; border-top:1px solid #DDDDDD; color:#EEEEEE;" {% if right_col_size is defined %}colspan="2"{% endif %}>
-//{% block pre_code %}{% endblock %}
-//</td>
-//</tr>
-//{% endif %}
-//{% if footer_check is not empty %}
-//<tr>
-//<td style="background-image:url('{{ dashboard_url }}/img/pattern/wall4.png');padding-top: 8px; padding-bottom: 8px; border-top:1px solid #DDDDDD" {% if right_col_size is defined %}colspan="2"{% endif %}>
-//{% block inside_footer %}{% endblock %}
-//</td>
-//</tr>
-//{% endif %}
+                            if(enable_footer_block === true)
+                                tr
+                                    td(
+                                        style="background-image:url('https://s3.amazonaws.com/static-email-assets/email_graphics/wall4.png');padding-top: 8px; padding-bottom: 8px; border-top:1px solid #DDDDDD",
+                                        colspan=(right_col_size ? 2 : null)
+                                    )
+                                        block footer
