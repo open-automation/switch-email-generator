@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var jade = require('gulp-jade');
 
 var paths = {
-    emails: ['./src/emails/**/*.jade'],
+    emails: ['./src/emails/**/*.jade', './src/example_emails/**/*.jade'],
     view: './src/view/**/*.jade'
 };
 
