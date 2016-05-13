@@ -4,6 +4,8 @@
   "description": "Generate HTML emails for Enfocus Switch.",
   "main": "index.js",
   "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
     "pug": "^2.0.0-alpha7"
   },
   "devDependencies": {},
