@@ -1,0 +1,15 @@
+{
+  "name": "switch-email-generator",
+  "version": "1.0.0",
+  "description": "Generate HTML emails for Enfocus Switch.",
+  "main": "index.js",
+  "dependencies": {
+    "pug": "^2.0.0-alpha7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
