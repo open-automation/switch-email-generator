@@ -1,15 +1,9 @@
 extends ./base.jade
 
-if(typeof(right_col_size) === 'undefined')
-    right_col_size = 250
-
-if(typeof(left_col_size) === 'undefined')
-    left_col_size = null
-
 block body_cells
 
-    td(width=left_col_size, valign="center" style="text-align:center;")
+    td(width=left_col_size || 100, valign="center" style="text-align:center;")
         block left_column
 
-    td(width=right_col_size, valign="top" style="padding-left: 0;")
+    td(width=right_col_size || 250, valign="top" style="padding-left: 0;")
         block right_column
